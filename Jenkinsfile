@@ -5,13 +5,11 @@ pipeline {
         stage('Verify Branch') {
             steps {
                 echo "$GIT_BRANCH"
-                sh 'pwd'
             }
         }
         stage('Docker Build') {
             steps {
-                sh '''
-                docker images -a'''
+                sh 'pwd'
             }
         }
     }
